@@ -79,6 +79,12 @@ interface CarouselProps extends ComponentProps<typeof CarouselContainer> {
   onIndexChange?: (index: number) => void;
 }
 
+/** 
+ * ### A modern carousel component using scroll-snap.
+ * - Allows you to scroll through a list of items, or navigate via the arrow keys. 
+ * - Optionally, the focused element can be controlled via the `focusedIndex` and `onIndexChange` props.
+ * - You can mark certain items as `"decorational"` which will prevent them from being focused.
+ */
 const CarouselComponent = ({
   focusedIndex,
   onIndexChange = () => {},

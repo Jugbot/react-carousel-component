@@ -93,7 +93,7 @@ const meta: Meta<typeof StyledStory> = {
 export default meta;
 
 export const CarouselStory: Story = {
-  storyName: "Carousel",
+  name: "Carousel",
   args: {
     focusedIndex: 0,
     allowScroll: true,
